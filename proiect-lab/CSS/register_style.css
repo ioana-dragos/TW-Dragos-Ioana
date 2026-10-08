@@ -1,0 +1,178 @@
+html, body {
+  background: #1e2837;
+  color: #a0aec0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.card {
+  max-width: 460px;
+  width: 100%;
+  background: #273549;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  color: #f6ad55;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.row {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.row label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #cbd5e0;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #3d4d65;
+  background: #202b3c;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #4a5568;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #4a6fa5;
+}
+
+.two-col {
+  display: flex;
+  gap: 12px;
+}
+
+.two-col > div {
+  flex: 1;
+}
+
+/* Radio buttons (Gen) - text stânga, cerculeț dreapta */
+.radio-group label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-weight: normal;
+  color: #cbd5e0;
+}
+
+.radio-group input[type="radio"] {
+  width: auto;
+  cursor: pointer;
+}
+
+/* Checkbox-uri (Interese) - căsuță sus, text jos */
+.checkbox-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.checkbox-grid label {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: #cbd5e0;
+}
+
+.checkbox-grid input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Câmp încărcare fișier */
+input[type="file"] {
+  background: transparent;
+  border: 1px solid #3d4d65;
+  padding: 6px 10px;
+}
+
+/* Zonă text */
+textarea {
+  resize: vertical;
+}
+
+/* Butoane acțiuni */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn.primary {
+  background: #f6ad55;
+  color: #1a202c;
+}
+
+.btn.ghost {
+  background: #1f2937;
+  color: #cbd5e0;
+  border: 1px solid #374151;
+}
+
+/* Link login */
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  color: #cbd5e0;
+}
+
+.login-link a {
+  color: #f6ad55;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
