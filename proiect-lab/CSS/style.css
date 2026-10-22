@@ -1,9 +1,77 @@
-body {
-  margin: 0;
-  padding: 0;
+ p.important {
+  color: blue;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.important {
+  color: red;
+}
+ 
+.card-a {
+  box-sizing: content-box;
+}
+
+.card-b {
+  box-sizing: border-box;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 10px 0;
+  background-color: lightgray;
+}
+ 
+nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
+  gap: 1rem;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+ 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.gallery > div {
+  background-color: #e0e0e0;
+  padding: 2rem;
+  text-align: center;
+} 
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+aside {
+  background-color: #eee;
+  padding: 1rem;
+}
+
+main {
+  background-color: #f9f9f9;
+  padding: 1rem;
 }
