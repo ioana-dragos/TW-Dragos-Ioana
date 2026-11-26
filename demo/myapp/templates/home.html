@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Comunitatea de Tehnologii Web</title>
+  <link rel="stylesheet" href="{% static 'home_style.css' %}">
+</head>
+<body>
+  <header>
+    <h1>Comunitatea de Tehnologii Web 2025</h1>
+    <nav>
+      <a href="{% url 'home' %}">Acasă</a>
+      <a href="{% url 'index' %}">Tehnologii</a>
+      <a href="{% url 'universities' %}">Facultăți</a>
+      <a href="{% url 'galerie' %}">Galerie</a>
+      <a href="{% url 'chatbot' %}">ChatBot</a>
+      <a href="{% url 'login' %}">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="columns">
+      <section class="column">
+        <h2>Lista de facultăți</h2>
+        <p>Descoperă programele universitare și specializările din domeniul IT și Web.</p>
+        <a href="{% url 'universities' %}" class="btn">Vezi facultățile</a>
+      </section>
+
+      <section class="column">
+        <h2>Tehnologii relevante</h2>
+        <p>Explorează HTML, CSS, JavaScript, Python și Django pentru dezvoltare web modernă.</p>
+        <a href="{% url 'index' %}" class="btn">Explorează tehnologiile</a>
+      </section>
+
+      <section class="column">
+        <h2>ChatBot</h2>
+        <p>Ai întrebări despre proiect sau tehnologii? Discută cu asistentul nostru virtual.</p>
+        <a href="{% url 'chatbot' %}" class="btn">Deschide ChatBot</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Comunitatea de Tehnologii Web</p>
+  </footer>
+</body>
+</html>
